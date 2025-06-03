@@ -73,52 +73,7 @@ I used structured, role-based prompts and few-shot examples to ensure consistent
 | `TrainingArguments`    | Configures hyperparameters for training                         |
 | `pipeline`             | Wraps the trained model into an interactive text-generation API |
 
----
 
-##  Evaluation Metrics
-
-| Metric                  | Value                                |
-| ----------------------- | ------------------------------------ |
-| Accuracy                | 86.3%                                |
-| F1 Score                | 0.82                                 |
-| Hallucination Reduction | Enabled via FAISS document grounding |
-
----
-
-## 📁 Project Structure
-
-```
-├── data/                  # Processed medical datasets
-├── train.py               # Fine-tuning script using SFTTrainer and LoRA
-├── inference.py           # Inference pipeline with FAISS + transformers
-├── evaluate.py            # Scoring functions for accuracy and hallucinations
-├── requirements.txt
-└── README.md
-```
-
----
-
-##  Getting Started
-
-```bash
-git clone https://github.com/yourusername/medibot.git
-cd medibot
-pip install -r requirements.txt
-```
-
-Run fine-tuning:
-
-```bash
-python train.py
-```
-
-Test inference:
-
-```bash
-python inference.py
-```
-
----
 
 ##  Next Steps
 
